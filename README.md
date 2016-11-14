@@ -6,8 +6,7 @@ Der Sourcode befindet sich im package *de.sb.BeerAnalyzer*, das Beispiel von Apa
 ## Anleitung
 
 Die Textdatei, die eingelesen wird, muss folgenden Aufbau haben:
-`<customerId>,<AnzahlDerBiere>` - beides müssen Integer sein.
-Sie kann entweder manuell oder mithilfe der Klasse *BeerDataGenerator.java* erzeugt werden.
+`<customerId>,<AnzahlDerBiere>` - beides müssen Integer sein. Eine Beispieldatei mit 2000 Datensätzen ist bereits dabei; ansonsten kann diese manuell oder mithilfe der Klasse *BeerDataGenerator.java* erzeugt werden.
 
 Danach muss die jar-Datei mit maven erzeugt werden. Als Maven Goals können z.B. `clean compile package` verwendet werden.
 
