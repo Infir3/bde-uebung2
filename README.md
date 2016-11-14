@@ -1,14 +1,14 @@
 ## Überblick
 Das Programm berechnet für eine Menge an Kundendaten den Promillegehalt jedes Kunden anhand der Anzahl der Biere, die dieser getrunken hat.
 
-Der Sourcode befindet sich im package *de.sb.BeerAnalyzer*, das Beispiel von Apache (https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#MapReduce_Tutorial) im package *WordCount*.
+Der Sourcecode befindet sich im package *de.sb.BeerAnalyzer*, das Beispiel von Apache (https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#MapReduce_Tutorial) im package *WordCount*.
 
 ## Anleitung
 
 Die Textdatei, die eingelesen wird, muss folgenden Aufbau haben:
 `<customerId>,<AnzahlDerBiere>` - beides müssen Integer sein. Eine Beispieldatei mit 2000 Datensätzen ist bereits dabei; ansonsten kann diese manuell oder mithilfe der Klasse *BeerDataGenerator.java* erzeugt werden.
 
-Danach muss die jar-Datei mit maven erzeugt werden. Als Maven Goals können z.B. `clean compile package` verwendet werden.
+Danach muss die jar-Datei mit Maven erzeugt werden. Als Maven Goals können z.B. `clean compile package` verwendet werden.
 
 Beide Dateien werden nun (z.B. per WinSCP) auf die Hadoop-VM kopiert. Die Datei mit den Testdaten muss zusätzlich im HDFS abgelegt werden.
 
