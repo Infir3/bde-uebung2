@@ -25,8 +25,8 @@ public class BeerAnalyzer {
 		@Override
 		protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
 			String[] strings = value.toString().split(Pattern.quote(","));
-			customerId = new IntWritable(Integer.parseInt(strings[0]));
-			amountOfBeers = new IntWritable(Integer.parseInt(strings[1]));
+			customerId.set(Integer.parseInt(strings[0])); // set ist schneller als ein neues Objekt zu erzeugen
+			amountOfBeers.set(Integer.parseInt(strings[1]));
 
 			context.write(customerId, amountOfBeers);
 		}
