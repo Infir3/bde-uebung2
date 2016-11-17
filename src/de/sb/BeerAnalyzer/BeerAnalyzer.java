@@ -19,8 +19,8 @@ public class BeerAnalyzer {
 	/* Liest die customerId und die Anzahl der Biere aus der Textzeile. */
 	public static class BeerMapper extends Mapper<Object, Text, IntWritable, IntWritable> {
 
-		private IntWritable customerId = null;
-		private IntWritable amountOfBeers = null;
+		private IntWritable customerId = new IntWritable();
+		private IntWritable amountOfBeers = new IntWritable();
 
 		@Override
 		protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
